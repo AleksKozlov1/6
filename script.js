@@ -1,3 +1,17 @@
+window.addEventListener('DOMContentLoaded', function (event) {
+    console.log("DOM fully loaded and parsed");
+    document.getElementById("vvod").addEventListener("click", calc);
+    document.getElementById("rec").addEventListener("click", clic);
+    document.getElementById("rec").addEventListener("change", calculate2);
+    document.getElementById("col").addEventListener("change", calculate2);
+    document.getElementById("rad1").addEventListener("change", calculate2);
+    document.getElementById("rad2").addEventListener("change", calculate2);
+    document.getElementById("rad3").addEventListener("change", calculate2);
+    document.getElementById("rad4").addEventListener("change", calculate2);
+    document.getElementById("chicken1").addEventListener("change", calculate2);
+    document.getElementById("chicken2").addEventListener("change", calculate2);
+    document.getElementById("chicken3").addEventListener("change", calculate2);
+});
 function calc() {
     let col, cen;
     col = document.getElementById('colich').value;
