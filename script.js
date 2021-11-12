@@ -55,7 +55,9 @@ function calculate2() {
     radio = document.getElementsByName('radio');
     col = parseInt(col);
 
-    if (!(Number.isInteger(type) && Number.isInteger(col)) && !(col > 0 && col < 10000)) {} else {
+    if (!(Number.isInteger(type) && Number.isInteger(col)) && !(col > 0 && col < 10000)) {
+        document.getElementById('produce').innerHTML = `Итог:`;
+    } else {
         for (var i = 0; i < radio.length; i++) {
             if (radio[i].checked) {
                 rate = radio[i].value;
